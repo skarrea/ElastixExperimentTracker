@@ -10,10 +10,3 @@ The code relies on two files to define a registration experiment:
  1. A config file to determine which files are used as input for the registration
  2. A registration scheme defined as *elastix* `.txt` files. 
 
-### To do
- - [ ] Update check_registration to rely on the config aswell.
- - [x] Move the ipython notebook from regout to this folder.
- - [ ] Create dummy folders in the repository for input and output and use them as a standard in the github repo and in the default configuration.
- - [ ] Add more documentation about the intended usage of the python files and some examples.
- - [ ] Add checks for file existance in [check_registration.py](check_registration.py)
- - [ ] make [convertToMhd.py](convertToMhd.py) a and importable function.
