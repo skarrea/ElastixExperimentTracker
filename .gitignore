@@ -1,0 +1,6 @@
+__pycache__/
+presentation/
+.vscode/
+.ipynb_checkpoints/
+mhd/
+ElastixAPIPresentation*

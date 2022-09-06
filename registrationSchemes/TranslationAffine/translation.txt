@@ -1,0 +1,42 @@
+// ********** Recommendations - see manual chapter 5
+(Registration "MultiResolutionRegistration")
+(Metric "AdvancedMattesMutualInformation")
+(ImageSampler "RandomCoordinate")
+(Interpolator "LinearInterpolator")
+(ResampleInterpolator "FinalBSplineInterpolator")
+(Resampler "DefaultResampler")
+(Optimizer "AdaptiveStochasticGradientDescent")
+(FixedImagePyramid "FixedSmoothingImagePyramid")
+(MovingImagePyramid "MovingSmoothingImagePyramid")
+
+// ********** ImageTypes
+(FixedInternalImagePixelType "float")
+(MovingInternalImagePixelType "float")
+(UseDirectionCosines "true")
+
+// ********** Pyramid and optimizer
+(NumberOfResolutions 3)
+(MaximumNumberOfIterations 100 100 100)
+// (ShowExactMetricValue "true")
+
+// ********** Transform
+(Transform TranslationTransform)
+
+// Initialization 
+(AutomaticTransformInitialization "true")
+(AutomaticTransformInitializationMethod "GeometricalCenter")
+
+// ********** Mask options
+// Eroding masks means that the optimizer does not 
+// consider the artificial edge introduced.
+(ErodeFixedMask "true")
+(ErodeMovingMask "true")
+
+// ********** Result options
+(ResultImageFormat "nii")
+(WriteResultImage "true")
+(DefaultPixelValue -1000.000000)
+(ResultImagePixelType "float")
+
+// ********** Combination of Transforms
+(HowToCombineTransforms "Compose")
