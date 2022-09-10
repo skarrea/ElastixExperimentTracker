@@ -1,0 +1,7 @@
+REGISTRATION:
+  SCHEME: "TranslationAffine"
+  MOVING_IMAGE_NAME: 'CT.mha'
+  FIXED_IMAGE_NAME: 'T1.mha'
+  MOVING_MASK_NAME: 'CT_mask.nii.gz'
+  FIXED_MASK_NAME: 'T1_mask.nii.gz'
+  MASK_DIR: 'inputImages'
