@@ -8,6 +8,9 @@ The code requires that elastix is added to path. In other words you should be ab
 ## Setup
 Run `pip install -r requirements.txt` to isntall the required packages. To download test data run `python generateTestData.py`. This will download a sample CT and T1 weighted MRI image of the brain and create some binary masks based on simple intensity thresholding.
 
+### Docker
+An alternative way to setupt is to use a docker image. A [dockerfile](docker/Dockerfile) is provided in the [docker folder](docker/). For a description of how to setup and use docker see the [docker readme](/docker/README.md).
+
 ## Usage
 The code relies on three files to define a registration experiment: 
  1. A config file to determine which files are used as input for the registration
